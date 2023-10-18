@@ -9,7 +9,9 @@ if [[ -n "$UNITY_SERIAL" ]]; then
   unity-editor \
     -logFile /dev/stdout \
     -quit \
-    -returnlicense
+    -returnlicense \
+    -username "$UNITY_EMAIL" \
+    -password "$UNITY_PASSWORD" \
 else
   echo "No UNITY_SERIAL detected! No license was returned."
 fi
