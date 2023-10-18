@@ -13,12 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Activate Unity
-      - name: Activate Unity
-        uses: game-ci/unity-activate@v1.3
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-
       # Return License
       - name: Return license
         uses: ./
